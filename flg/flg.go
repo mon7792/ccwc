@@ -137,6 +137,6 @@ func (f *Ops) Set() {
 }
 
 // Get returns the ops type and the data input
-func (f *Ops) Get() (OpsType, DataInput) {
-	return f.flgType, f.dataInput
+func (f *Ops) Get() (OpsType, DataInput, string) {
+	return f.flgType, f.dataInput, f.fsPath
 }
